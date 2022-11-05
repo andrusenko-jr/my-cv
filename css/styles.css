@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&display=swap');
+body{
+    margin: 0;
+    text-align: center;
+    color: #0E5E6F;
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+}
+h1, h2, h3{
+    font-family: Sacramento, sans-serif;
+}
+h1{
+    margin: 0 auto;
+    font-size: 64px;   
+}
+h2{
+    font-size: 32px;   
+}
+h3{
+    font-size: 28px;
+}
+p{
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+}
+.top-container{
+    background: #DEF5E5;
+    position: relative;
+    padding-top: 100px;
+}
+
+.top-cloud{
+    position: absolute;
+    top: 50px;
+    left: 60%;
+    animation: scale-up-top 2s linear infinite alternate-reverse both;
+    
+}
+.bottom-cloud{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    animation: scale-up-top 3s 0.75s linear infinite alternate-reverse both;
+}
+
+.heart{
+    width: 20px;height: 20px;
+}
+.photo{
+    width: 256px;
+    height: 256px;
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills-table td{
+    font-size: 16px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+hr{
+    border-style: none;
+    border-bottom: 10px dotted;
+    width: 100px;
+    margin-top: 25px;
+}
+.bottom-container{
+    margin-top: 25px;
+}
+.footer-link{
+    display: inline-block;
+    text-decoration: none;
+    color: #0E5E6F;
+    width: 100px;
+    height: 30px;
+    padding-top: 10px;
+    border: 1px solid #0E5E6F;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.footer-link:hover{
+    color: #DEF5E5;
+    background: #0e5e6f;
+}
+
+@-webkit-keyframes scale-up-top {
+    0% {
+      -webkit-transform: scale(0.85);
+              transform: scale(0.85);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+ 
